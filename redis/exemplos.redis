@@ -1,0 +1,14 @@
+# Exemplos de chaves da plataforma (redis-cli). EX = expiração em segundos.
+
+# Sessão do usuário (30 minutos)
+SET sessao:usr123 '{"token":"abc123","expira":"14:30"}' EX 1800
+GET sessao:usr123
+
+# Pesquisas recentes (24 horas)
+RPUSH pesquisa:usr123 "hospedagem" "passeio"
+EXPIRE pesquisa:usr123 86400
+LRANGE pesquisa:usr123 0 -1
+
+# Bloqueio temporário de horário (10 minutos).
+# NX: só grava se a chave não existir. O primeiro tutor recebe OK; o segundo recebe nil.
+SET bloqueio:cuidador:45:2026-12-20T14:00 usr123 NX EX 600

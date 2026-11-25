@@ -1,0 +1,15 @@
+{
+  "_id": "PET001",
+  "tutor_id": "TUTOR025",
+  "nome": "Luna",
+  "especie": "Cachorro",
+  "raca": "Golden Retriever",
+  "idade": 3,
+  "porte": "Grande",
+  "caracteristicas": {
+    "comportamento": "Sociável",
+    "necessidades_especiais": false,
+    "observacoes": "Gosta de passeios e de brincar"
+  },
+  "ativo": true
+}

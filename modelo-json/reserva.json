@@ -1,0 +1,24 @@
+{
+  "_id": "RESERVA100",
+  "tutor_id": "TUTOR025",
+  "animal_id": "PET001",
+  "status": "confirmada",
+  "criada_em": "2026-11-25T20:12:00Z",
+  "itens": [
+    {
+      "tipo": "Hospedagem",
+      "cuidador_id": "CUIDADOR010",
+      "data_inicio": "2026-12-20",
+      "data_fim": "2026-12-25",
+      "valor": 500.00
+    },
+    {
+      "tipo": "Passeio",
+      "cuidador_id": "CUIDADOR010",
+      "data_inicio": "2026-12-21T14:00:00",
+      "duracao_minutos": 60,
+      "valor": 40.00
+    }
+  ],
+  "valor_total": 540.00
+}
